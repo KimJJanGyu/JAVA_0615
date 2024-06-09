@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">대림대학교 캠퍼스맵</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">대림대학교 캠퍼스맵</string>
+    <string name="nav_header_subtitle">캠퍼스맵</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_hongji">홍지관</string>
+    <string name="menu_car">자동차관\n</string>
+    <string name="menu_center">대학본부\n</string>
+    <string name="menu_dasan">다산관\n</string>
+    <string name="menu_jungbo">정보통신관</string>
+    <string name="menu_junsan">전산관</string>
+    <string name="menu_limgok">임곡관</string>
+    <string name="menu_saenghwal">생활관\n</string>
+    <string name="menu_hanlim">한림관\n</string>
+    <string name="menu_yulgok">율곡관\n</string>
+    <string name="menu_toegye">퇴계관</string>
+    <string name="menu_student">학생회관\n</string>
+    <string name="menu_sooam">수암관\n</string>
+    <string name="Idx">202030108 김찬규\n202130131 최원재\n202130132 염재현\n202130133 최현기</string>
+    <string name="todo">TODO</string>
+    <string name="center_1f">학생본부1층</string>
+    <string name="center_2f">학생본부2층</string>
+    <string name="center_3f">학생본부3층</string>
+    <string name="center_4f">학생본부4층</string>
+
+    <string name="dasan_1f">다산관1층</string>
+    <string name="dasan_2f">다산관2층</string>
+    <string name="dasan_3f">다산관3층</string>
+    <string name="dasan_4f">다산관4층</string>
+    <string name="dasan_5f">다산관5층</string>
+
+    <string name="sooam_1f">수암관1층</string>
+    <string name="sooam_2f">수암관2층</string>
+    <string name="sooam_3f">수암관3층</string>
+    <string name="sooam_4f">수암관4층</string>
+    <string name="sooam_5f">수암관5층</string>
+
+
+    <string name="car_1f">자동차관1층</string>
+    <string name="car_3f">자동차관3층</string>
+    <string name="car_4f">자동차관4층</string>
+    <string name="car_5f">자동차관5층</string>
+    <string name="car_6f">자동차관6층</string>
+    <string name="car_7f">자동차관7층</string>
+
+    <string name="yulgok_1f">율곡관1층</string>
+    <string name="yulgok_2f">율곡관2층</string>
+    <string name="yulgok_3f">율곡관3층</string>
+    <string name="yulgok_4f">율곡관4층</string>
+    <string name="yulgok_5f">율곡관5층</string>
+    <string name="yulgok_6f">율곡관6층</string>
+    <string name="yulgok_7f">율곡관7층</string>
+
+    <string name="toegye_1f">퇴계관1층</string>
+    <string name="toegye_2f">퇴계관2층</string>
+    <string name="toegye_3f">퇴계관3층</string>
+    <string name="toegye_4f">퇴계관4층</string>
+    <string name="toegye_5f">퇴계관5층</string>
+    <string name="toegye_6f">퇴계관6층</string>
+    <string name="toegye_7f">퇴계관7층</string>
+    <string name="home">홈\n</string>
+</resources>
