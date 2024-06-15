@@ -719,7 +719,18 @@
     <string name="string_dasan3f_14">⑭M0314</string>
 
     <!--다산관4층-->
-    <!--자료 필요-->
+    <string name="string_dasan4f_1">①M0401</string>
+    <string name="string_dasan4f_2">②M0402\n설비자동제어\n적산실</string>
+    <string name="string_dasan4f_3">③학생상담 및\n교육 휴게실</string>
+    <string name="string_dasan4f_4">④M0493\n소방안전\n설비과관리실</string>
+    <string name="string_dasan4f_5">⑤M0404</string>
+    <string name="string_dasan4f_6">⑥교수연구실</string>
+    <string name="string_dasan4f_7">⑦M0408</string>
+    <string name="string_dasan4f_8">⑧M0415\n강의실</string>
+    <string name="string_dasan4f_9">⑨M0411\n강의실</string>
+    <string name="string_dasan4f_10">⑩M0212</string>
+    <string name="string_dasan4f_11">⑪M0414\n소방실험실</string>
+    <string name="string_dasan4f_12">⑫M0416</string>
 
     <!--다산관5층-->
     <string name="string_dasan5f_1">①M0501\n기계공학과\n사무실</string>

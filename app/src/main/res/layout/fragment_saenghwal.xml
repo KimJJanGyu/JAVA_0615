@@ -30,11 +30,11 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:layout_marginStart="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintTop_toBottomOf="@id/image_saenghwalbuilding"
+        app:layout_constraintVertical_bias="0.268"
+        android:text="생활관" /> <!-- 임시 텍스트 추가 -->
 
     <ImageView
         android:id="@+id/image_carline"
@@ -64,7 +64,7 @@
         android:id="@+id/saenghwal2f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/saenghwal_2f"
         android:src="@drawable/saenghwal_2fimage"

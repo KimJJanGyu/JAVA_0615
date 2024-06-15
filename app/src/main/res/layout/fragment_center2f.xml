@@ -25,16 +25,16 @@
             app:layout_constraintGuide_begin="290dp" />
 
 
-
         <ImageView
             android:id="@+id/centerimage_2f"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="401dp"
+            android:layout_height="197dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
             android:src="@drawable/centerimage_2f"
             tools:ignore="MissingConstraints"
-            android:contentDescription="@string/todo"
-            android:clickable="true"
-            android:focusable="true"/>
+            tools:layout_editor_absoluteX="-7dp" />
 
         <ImageView
             android:id="@+id/overlay_image"
