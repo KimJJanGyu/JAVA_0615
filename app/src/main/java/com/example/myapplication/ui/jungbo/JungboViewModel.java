@@ -10,7 +10,7 @@ public class JungboViewModel extends ViewModel {
 
     public JungboViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is jungbo fragment");
+        mText.setValue("정보통신관");
     }
 
     public LiveData<String> getText() {

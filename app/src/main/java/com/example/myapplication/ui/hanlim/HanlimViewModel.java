@@ -10,7 +10,7 @@ public class HanlimViewModel extends ViewModel {
 
     public HanlimViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Car fragment");
+        mText.setValue("한림관");
     }
 
     public LiveData<String> getText() {

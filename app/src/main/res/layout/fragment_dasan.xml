@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitXY"
-        android:src="@drawable/dasan"
+        android:src="@drawable/golf"
         app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -103,7 +103,7 @@
         android:contentDescription="@string/dasan_5f"
         android:src="@drawable/dasan5f_image"
         app:layout_constraintStart_toStartOf="@id/guideline_start_dasan"
-        app:layout_constraintTop_toBottomOf="@id/dasan5f" />
+        app:layout_constraintTop_toBottomOf="@id/dasan4f" />
 
     <FrameLayout
         android:id="@+id/fragment_container_dasan"

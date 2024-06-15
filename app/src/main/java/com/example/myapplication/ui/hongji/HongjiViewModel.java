@@ -10,7 +10,7 @@ public class HongjiViewModel extends ViewModel {
 
     public HongjiViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is hongji fragment");
+        mText.setValue("홍지관");
     }
 
     public LiveData<String> getText() {
