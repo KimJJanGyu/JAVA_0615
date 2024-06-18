@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.limgok;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -67,31 +66,31 @@ public class Limgok1fFragment extends Fragment {
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.limgok1f_1) {
                 params.leftMargin = 100;
-                params.topMargin = 380;
+                params.topMargin = 180;
             } else if (textView.getId() == R.id.limgok1f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 300;
+                params.topMargin = 180;
             } else if (textView.getId() == R.id.limgok1f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 520;
+                params.topMargin = 180;
             } else if (textView.getId() == R.id.limgok1f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 750;
+                params.topMargin = 180;
             } else if (textView.getId() == R.id.limgok1f_5) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 250;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok1f_6) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 380;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok1f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 530;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok1f_8) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 640;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok1f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 850;
+                params.topMargin = 520;
             }
             // Add more conditions as needed for other TextViews
 

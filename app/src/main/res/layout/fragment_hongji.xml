@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.hongji.HongjiFragment">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_hongji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
+
     <ImageView
         android:id="@+id/image_hongjibuilding"
         android:layout_width="match_parent"
@@ -23,12 +30,13 @@
         android:id="@+id/text_hongji"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:textSize="30sp"
+        android:layout_marginStart="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309" />
+        app:layout_constraintVertical_bias="0.268" />
 
     <ImageView
         android:id="@+id/image_carline"
@@ -51,80 +59,74 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/hongji_b1f"
         android:src="@drawable/hongjib1f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/image_carline" />
 
     <ImageButton
         android:id="@+id/hongji1f"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/hongji_1f"
         android:src="@drawable/hongji1f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <ImageButton
-        android:id="@+id/hongji3f"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="232dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/hongji_3f"
-        android:src="@drawable/hongji3f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <ImageButton
-        android:id="@+id/hongji4f"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="300dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/hongji_4f"
-        android:src="@drawable/hongji4f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <ImageButton
-        android:id="@+id/hongji5f"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="364dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/hongji_5f"
-        android:src="@drawable/hongji5f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <ImageButton
-        android:id="@+id/hongji6f"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="432dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/hongji_6f"
-        android:src="@drawable/hongji6f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/hongjib1f" />
 
     <ImageButton
         android:id="@+id/hongji2f"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/hongji_2f"
         android:src="@drawable/hongji2f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="7dp" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/hongji1f" />
+
+    <ImageButton
+        android:id="@+id/hongji3f"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hongji_3f"
+        android:src="@drawable/hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/hongji2f" />
+
+    <ImageButton
+        android:id="@+id/hongji4f"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hongji_4f"
+        android:src="@drawable/hongji4f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/hongji3f" />
+
+    <ImageButton
+        android:id="@+id/hongji5f"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hongji_5f"
+        android:src="@drawable/hongji5f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/hongji4f" />
+
+    <ImageButton
+        android:id="@+id/hongji6f"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hongji_6f"
+        android:src="@drawable/hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji"
+        app:layout_constraintTop_toBottomOf="@id/hongji5f" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

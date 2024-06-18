@@ -83,50 +83,50 @@ public class Sooam1fFragment extends Fragment {
                 params.leftMargin = 780;
                 params.topMargin = 950;
             } else if (textView.getId() == R.id.sooam1f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 430;
+                params.topMargin = 1500;
             } else if (textView.getId() == R.id.sooam1f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 620;
+                params.topMargin = 2200;
             } else if (textView.getId() == R.id.sooam1f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 565 ;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_5) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 570;
+                params.topMargin = 2200;
             } else if (textView.getId() == R.id.sooam1f_6) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 500;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 450;
+                params.topMargin = 2200;
             } else if (textView.getId() == R.id.sooam1f_8) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 460;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 380;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_10) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 380;
+                params.topMargin = 2200;
             } else if (textView.getId() == R.id.sooam1f_11) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 330;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_12) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 310;
+                params.topMargin = 2200;
             } else if (textView.getId() == R.id.sooam1f_13) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 280;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_14) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 260;
+                params.topMargin = 2200;
             } else if (textView.getId() == R.id.sooam1f_15) {
-                params.leftMargin = 780;
-                params.topMargin = 2000;
+                params.leftMargin = 220;
+                params.topMargin = 1950;
             } else if (textView.getId() == R.id.sooam1f_16) {
-                params.leftMargin = 450;
-                params.topMargin = 2000;
+                params.leftMargin = 150;
+                params.topMargin = 1950;
             }
             // Add more conditions as needed for other TextViews
 

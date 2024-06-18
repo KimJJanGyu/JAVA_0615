@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.junsan;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,18 +51,18 @@ public class Junsan3fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.junsan3f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 420;
+                params.topMargin = 350;
             } else if (textView.getId() == R.id.junsan3f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 460;
+                params.topMargin = 200;
             } else if (textView.getId() == R.id.junsan3f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 745;
+                params.topMargin = 200;
             } else if (textView.getId() == R.id.junsan3f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
-
+                params.leftMargin = 750;
+                params.topMargin = 350;
+            }
                 // Add more conditions as needed for other TextViews
 
                 // Apply the modified layout parameters
@@ -77,4 +76,4 @@ public class Junsan3fFragment extends Fragment {
             }
         }
     }
-}
+

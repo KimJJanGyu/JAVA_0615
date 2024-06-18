@@ -23,23 +23,24 @@
         android:id="@+id/saenghwalimage_1f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/todo"
         android:src="@drawable/saenghwal1f_image"
+        android:contentDescription="@string/todo"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:clickable="true"
-        android:focusable="true" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
 
     <ImageView
         android:id="@+id/overlay_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_maker"
-        app:layout_constraintTop_toTopOf="@id/saenghwalimage_1f"
-        app:layout_constraintStart_toStartOf="@id/saenghwalimage_1f"
         android:visibility="gone"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:layout_constraintTop_toTopOf="@id/saenghwalimage_1f"
+        app:layout_constraintStart_toStartOf="@id/saenghwalimage_1f" />
 
     <TextView
         android:id="@+id/saenghwal1f_1"
@@ -63,19 +64,6 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/saenghwalimage_1f"
         app:layout_constraintStart_toStartOf="@id/guideline_start_saenghwal_1f_2"
-        android:clickable="true"
-        android:focusable="true" />
-
-    <TextView
-        android:id="@+id/saenghwal1f_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/string_saenghwal1f_3"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_saenghwal_1f_1"
-        app:layout_constraintTop_toBottomOf="@id/saenghwal1f_1"
         android:clickable="true"
         android:focusable="true" />
 

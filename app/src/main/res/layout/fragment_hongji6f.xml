@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.hongji.Hongji6fFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_1"
+        android:id="@+id/guideline_start_hongji_6f_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="27dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_2"
+        android:id="@+id/guideline_start_hongji_6f_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="236dp" />
 
-    <ImageView
-        android:id="@+id/image_hongji6f"
-        android:layout_width="match_parent"
-        android:layout_height="283dp"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitXY"
-        android:src="@drawable/hongji6fmap"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        <ImageView
+            android:id="@+id/hongjiimage_6f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hongji6fmap"
+            android:contentDescription="@string/todo"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp" />
 
-    <ImageView
-        android:id="@+id/overlay_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_maker"
-        app:layout_constraintTop_toTopOf="@id/hongji6f"
-        app:layout_constraintStart_toStartOf="@id/hongji6f"
-        android:visibility="gone"
-        tools:ignore="MissingConstraints,NotSibling"
-        android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/overlay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_maker"
+            android:visibility="gone"
+            android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@id/hongjiimage_6f"
+            app:layout_constraintStart_toStartOf="@id/hongjiimage_6f" />
 
     <TextView
         android:id="@+id/text_hongji6f1"
@@ -54,8 +58,8 @@
         android:text="@string/string_hongji6f_1"
         android:textColor="@color/black"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -67,8 +71,8 @@
         android:text="@string/string_hongji6f_2"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -80,11 +84,9 @@
         android:text="@string/string_hongji6f_3"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -97,8 +99,8 @@
         android:text="@string/string_hongji6f_4"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -110,11 +112,9 @@
         android:text="@string/string_hongji6f_5"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -127,8 +127,8 @@
         android:text="@string/string_hongji6f_6"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -140,11 +140,9 @@
         android:text="@string/string_hongji6f_7"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -157,8 +155,8 @@
         android:text="@string/string_hongji6f_8"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -170,11 +168,9 @@
         android:text="@string/string_hongji6f_9"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -187,8 +183,8 @@
         android:text="@string/string_hongji6f_10"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -200,11 +196,9 @@
         android:text="@string/string_hongji6f_11"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -217,8 +211,8 @@
         android:text="@string/string_hongji6f_12"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -230,11 +224,9 @@
         android:text="@string/string_hongji6f_13"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -247,8 +239,8 @@
         android:text="@string/string_hongji6f_14"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
 
@@ -263,8 +255,8 @@
         android:text="@string/string_hongji6f_15"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -276,8 +268,8 @@
         android:text="@string/string_hongji6f_16"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -289,11 +281,9 @@
         android:text="@string/string_hongji6f_17"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
@@ -306,8 +296,8 @@
         android:text="@string/string_hongji6f_18"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -319,13 +309,12 @@
         android:text="@string/string_hongji6f_19"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji6f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_6f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_6f_1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -30,14 +30,14 @@
             android:id="@+id/sooamimage_2f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/sooamimage_2f"
-            android:contentDescription="@string/todo"
+            android:layout_marginTop="70dp"
             android:clickable="true"
+            android:contentDescription="@string/todo"
             android:focusable="true"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/sooamimage_2f"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="10dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/overlay_image"

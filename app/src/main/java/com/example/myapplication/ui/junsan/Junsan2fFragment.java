@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.junsan;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,7 +38,6 @@ public class Junsan2fFragment extends Fragment {
         TextView textView11 = view.findViewById(R.id.junsan2f_11);
         TextView textView12 = view.findViewById(R.id.junsan2f_12);
         TextView textView13 = view.findViewById(R.id.junsan2f_13);
-        TextView textView14 = view.findViewById(R.id.junsan2f_14);
 
         textView1.setOnClickListener(v -> handleTextViewClick(textView1, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
         textView2.setOnClickListener(v -> handleTextViewClick(textView2, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
@@ -51,10 +49,9 @@ public class Junsan2fFragment extends Fragment {
         textView8.setOnClickListener(v -> handleTextViewClick(textView8, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
         textView9.setOnClickListener(v -> handleTextViewClick(textView9, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
         textView10.setOnClickListener(v -> handleTextViewClick(textView10, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
-        textView11.setOnClickListener(v -> handleTextViewClick(textView11, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
+        textView11.setOnClickListener(v -> handleTextViewClick(textView11, R.drawable.ic_maker)); // Replace R.drawable.image3 with your actual image
         textView12.setOnClickListener(v -> handleTextViewClick(textView12, R.drawable.ic_maker)); // Replace R.drawable.image3 with your actual image
-        textView13.setOnClickListener(v -> handleTextViewClick(textView13, R.drawable.ic_maker)); // Replace R.drawable.image3 with your actual image
-        textView14.setOnClickListener(v -> handleTextViewClick(textView14, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
+        textView13.setOnClickListener(v -> handleTextViewClick(textView13, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
 
 
 
@@ -74,52 +71,48 @@ public class Junsan2fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.junsan2f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 900;
+                params.topMargin = 560;
             } else if (textView.getId() == R.id.junsan2f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 900;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.junsan2f_3) {
                 params.leftMargin = 780;
-                params.topMargin = 320;
+                params.topMargin = 570;
             } else if (textView.getId() == R.id.junsan2f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 670;
+                params.topMargin = 500;
             } else if (textView.getId() == R.id.junsan2f_5) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 260;
+                params.topMargin = 360;
             } else if (textView.getId() == R.id.junsan2f_6) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 320;
+                params.topMargin = 360;
             } else if (textView.getId() == R.id.junsan2f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 380;
+                params.topMargin = 360;
             } else if (textView.getId() == R.id.junsan2f_8) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 80;
+                params.topMargin = 550;
             } else if (textView.getId() == R.id.junsan2f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 80;
+                params.topMargin = 480;
             }
             else if (textView.getId() == R.id.junsan2f_10) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 80;
+                params.topMargin = 370;
             }
             else if (textView.getId() == R.id.junsan2f_11) {
                 params.leftMargin = 780;
-                params.topMargin = 320;
+                params.topMargin = 200;
             }
             else if (textView.getId() == R.id.junsan2f_12) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 930;
+                params.topMargin = 230;
             }
             else if (textView.getId() == R.id.junsan2f_13) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
-            }
-            else if (textView.getId() == R.id.junsan2f_14) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 930;
+                params.topMargin = 310;
             }
             // Add more conditions as needed for other TextViews
 

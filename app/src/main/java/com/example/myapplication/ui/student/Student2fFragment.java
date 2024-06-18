@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.student;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -83,66 +82,66 @@ public class Student2fFragment extends Fragment {
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.student2f_1) {
                 params.leftMargin = 100;
-                params.topMargin = 380;
+                params.topMargin = 250;
             } else if (textView.getId() == R.id.student2f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 200;
+                params.topMargin = 250;
             }
             else if (textView.getId() == R.id.student2f_3) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 300;
+                params.topMargin = 250;
             }
             else if (textView.getId() == R.id.student2f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 400;
+                params.topMargin = 250;
             }
             else if (textView.getId() == R.id.student2f_5) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 500;
+                params.topMargin = 250;
             }
             else if (textView.getId() == R.id.student2f_6) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 600;
+                params.topMargin = 250;
             }
             else if (textView.getId() == R.id.student2f_7) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 100;
+                params.topMargin = 370;
             }
             else if (textView.getId() == R.id.student2f_8) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 160;
+                params.topMargin = 370;
             }
             else if (textView.getId() == R.id.student2f_9) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 240;
+                params.topMargin = 370;
             }
             else if (textView.getId() == R.id.student2f_10) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 320;
+                params.topMargin = 370;
             }
             else if (textView.getId() == R.id.student2f_11) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 400;
+                params.topMargin = 370;
             }
             else if (textView.getId() == R.id.student2f_12) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 850;
+                params.topMargin = 170;
             }
             else if (textView.getId() == R.id.student2f_13) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 850;
+                params.topMargin = 220;
             }
             else if (textView.getId() == R.id.student2f_14) {
-                params.leftMargin = 450;
+                params.leftMargin = 850;
                 params.topMargin = 330;
             }
             else if (textView.getId() == R.id.student2f_15) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 850;
+                params.topMargin = 440;
             }
             else if (textView.getId() == R.id.student2f_16) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 850;
+                params.topMargin = 550;
             }// Add more conditions as needed for other TextViews
 
             // Apply the modified layout parameters

@@ -1,50 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.hongji.Hongji3fFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_1"
+        android:id="@+id/guideline_start_hongji_3f_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="27dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_2"
+        android:id="@+id/guideline_start_hongji_3f_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="233dp" />
 
-    <ImageView
-        android:id="@+id/image_hongji3f"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitXY"
-        android:src="@drawable/hongji3fmap"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        <ImageView
+            android:id="@+id/hongjiimage_3f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hongji3fmap"
+            android:contentDescription="@string/todo"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp" />
 
-    <ImageView
-        android:id="@+id/overlay_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_maker"
-        app:layout_constraintTop_toTopOf="@id/hongji3f"
-        app:layout_constraintStart_toStartOf="@id/hongji3f"
-        android:visibility="gone"
-        tools:ignore="MissingConstraints,NotSibling"
-        android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/overlay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_maker"
+            android:visibility="gone"
+            android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@id/hongjiimage_3f"
+            app:layout_constraintStart_toStartOf="@id/hongjiimage_3f" />
 
     <TextView
-        android:id="@+id/text_hongji3f1"
+        android:id="@+id/hongji3f_1"
         android:layout_width="125dp"
         android:layout_height="51dp"
         android:layout_marginTop="15dp"
@@ -54,12 +58,12 @@
         android:text="@string/string_hongji3f_1"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/text_hongji3f2"
+        android:id="@+id/hongji3f_2"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:layout_marginTop="15dp"
@@ -67,12 +71,12 @@
         android:text="@string/string_hongji3f_2"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/text_hongji3f4"
+        android:id="@+id/hongji3f_4"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_marginTop="65dp"
@@ -80,25 +84,14 @@
         android:text="@string/string_hongji3f_4"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/text_hongji3f14"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_marginTop="265dp"
-        android:gravity="center"
-        android:text="@string/string_hongji3f_14"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        tools:ignore="MissingConstraints" />
+
 
     <TextView
-        android:id="@+id/text_hongji3f6"
+        android:id="@+id/hongji3f_6"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginTop="105dp"
@@ -106,12 +99,12 @@
         android:text="@string/string_hongji3f_6"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/text_hongji3f3"
+        android:id="@+id/hongji3f_3"
         android:layout_width="wrap_content"
         android:layout_height="41dp"
         android:layout_marginTop="65dp"
@@ -119,8 +112,8 @@
         android:text="@string/string_hongji3f_3"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
@@ -128,7 +121,7 @@
         android:focusable="true" />
 
     <TextView
-        android:id="@+id/text_hongji3f8"
+        android:id="@+id/hongji3f_8"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="150dp"
@@ -136,12 +129,12 @@
         android:text="@string/string_hongji3f_8"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/text_hongji3f12"
+        android:id="@+id/hongji3f_12"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginTop="230dp"
@@ -149,12 +142,12 @@
         android:text="@string/string_hongji3f_12"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/text_hongji3f10"
+        android:id="@+id/hongji3f_10"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginTop="190dp"
@@ -162,12 +155,12 @@
         android:text="@string/string_hongji3f_10"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/text_hongji3f9"
+        android:id="@+id/hongji3f_9"
         android:layout_width="wrap_content"
         android:layout_height="39dp"
         android:layout_marginTop="190dp"
@@ -175,8 +168,8 @@
         android:text="@string/string_hongji3f_9"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
@@ -184,7 +177,7 @@
         android:focusable="true" />
 
     <TextView
-        android:id="@+id/text_hongji3f11"
+        android:id="@+id/hongji3f_11"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginTop="230dp"
@@ -192,8 +185,8 @@
         android:text="@string/string_hongji3f_11"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
@@ -201,7 +194,7 @@
         android:focusable="true" />
 
     <TextView
-        android:id="@+id/text_hongji3f13"
+        android:id="@+id/hongji3f_13"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginTop="265dp"
@@ -209,8 +202,8 @@
         android:text="@string/string_hongji3f_13"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
@@ -218,7 +211,7 @@
         android:focusable="true" />
 
     <TextView
-        android:id="@+id/text_hongji3f5"
+        android:id="@+id/hongji3f_5"
         android:layout_width="wrap_content"
         android:layout_height="44dp"
         android:layout_marginTop="105dp"
@@ -226,8 +219,8 @@
         android:text="@string/string_hongji3f_5"
         android:textColor="@color/black"
         android:textSize="23sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
@@ -235,7 +228,7 @@
         android:focusable="true" />
 
     <TextView
-        android:id="@+id/text_hongji3f7"
+        android:id="@+id/hongji3f_7"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_marginTop="150dp"
@@ -243,16 +236,31 @@
         android:text="@string/string_hongji3f_7"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
         android:clickable="true"
         android:focusable="true" />
 
+
+
+        <TextView
+            android:id="@+id/hongji3f_14"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginTop="265dp"
+            android:gravity="center"
+            android:text="@string/string_hongji3f_14"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_2"
+            app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+            tools:ignore="MissingConstraints" />
+
     <TextView
-        android:id="@+id/text_hongji3f15"
+        android:id="@+id/hongji3f_15"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginTop="300dp"
@@ -260,8 +268,8 @@
         android:text="@string/string_hongji3f_15"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hongji3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hongjiimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hongji_3f_1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="569dp"
@@ -269,4 +277,5 @@
         android:focusable="true" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

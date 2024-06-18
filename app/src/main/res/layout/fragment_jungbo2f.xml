@@ -1,48 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.jungbo.Jungbo2fFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_1"
+        android:id="@+id/guideline_start_jungbo_2f_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="10dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_2"
+        android:id="@+id/guideline_start_jungbo_2f_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="240dp" />
 
-    <ImageView
-        android:id="@+id/image_jungbo2f"
-        android:layout_width="wrap_content"
-        android:layout_height="283dp"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitXY"
-        android:src="@drawable/jungbo2fmap"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/jungboimage_2f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jungbo2fmap"
+            android:contentDescription="@string/todo"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp" />
 
-    <ImageView
-        android:id="@+id/overlay_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_maker"
-        app:layout_constraintTop_toTopOf="@id/jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/jungbo2f"
-        android:visibility="gone"
-        tools:ignore="MissingConstraints,NotSibling"
-        android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/overlay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_maker"
+            android:visibility="gone"
+            android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@id/jungboimage_2f"
+            app:layout_constraintStart_toStartOf="@id/jungboimage_2f" />
 
     <TextView
         android:id="@+id/text_jungbo2f1"
@@ -53,8 +56,8 @@
         android:text="@string/string_jungbo2f_1"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
@@ -68,8 +71,8 @@
         android:text="@string/string_jungbo2f_2"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_2"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
         tools:ignore="MissingConstraints"
         />
 
@@ -82,8 +85,8 @@
         android:text="@string/string_jungbo2f_3"
         android:textColor="@color/black"
         android:textSize="19sp"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
@@ -97,8 +100,8 @@
         android:text="@string/string_jungbo2f_4"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_2"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
         tools:ignore="MissingConstraints"
         />
 
@@ -111,8 +114,8 @@
         android:text="@string/string_jungbo2f_6"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_2"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
         tools:ignore="MissingConstraints"
         />
 
@@ -125,8 +128,8 @@
         android:text="@string/string_jungbo2f_9"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
@@ -140,8 +143,8 @@
         android:text="@string/string_jungbo2f_8"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_2"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
         tools:ignore="MissingConstraints"
         />
 
@@ -154,8 +157,8 @@
         android:text="@string/string_jungbo2f_10"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_2"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -167,8 +170,8 @@
         android:text="@string/string_jungbo2f_11"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
@@ -182,8 +185,8 @@
         android:text="@string/string_jungbo2f_12"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_2"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
         tools:ignore="MissingConstraints"
         />
 
@@ -196,8 +199,8 @@
         android:text="@string/string_jungbo2f_7"
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
@@ -211,10 +214,11 @@
         android:text="@string/string_jungbo2f_5"
         android:textColor="@color/black"
         android:textSize="19sp"
-        app:layout_constraintTop_toBottomOf="@id/image_jungbo2f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/jungboimage_2f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_jungbo_2f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

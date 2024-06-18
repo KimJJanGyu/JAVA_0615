@@ -108,59 +108,59 @@ public class Sooam2fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.sooam2f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 900;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 820;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 760;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_4) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_5) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 700;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_6) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 660;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_8) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 600;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_10) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_11) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 540;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_12) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_13) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 480;
+                params.topMargin = 1000;
             } else if (textView.getId() == R.id.sooam2f_14) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_15) {
                 params.leftMargin = 780;
-                params.topMargin = 320;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_16) {
                 params.leftMargin = 450;
-                params.topMargin = 330;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_17) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 100;
+                params.topMargin = 720;
             } else if (textView.getId() == R.id.sooam2f_18) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 100;
+                params.topMargin = 1010;
             } else if (textView.getId() == R.id.sooam2f_19) {
                 params.leftMargin = 780;
                 params.topMargin = 320;

@@ -6,6 +6,7 @@
     <string name="nav_header_subtitle">캠퍼스맵</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="dasan_mini">미니다산관</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -40,6 +41,43 @@
     <string name="jungbo_2f">정통관2층</string>
     <string name="jungbo_3f">정통관3층</string>
     <string name="jungbo_4f">정통관4층</string>
+    <string name="building_info">학부학과 URL https://www.daelim.ac.kr/cms/FrCon/index.do?MENU_ID=1760\n
+각 건물 전화번호\n
+기계공학과   다산관 5층   467-4808   \n
+건축과           퇴계관 7층   467-4929  \n
+소방안전설비과   다산관 4층   467-4678, 4827   \n
+로봇자동화공학과   율곡관 5층   467-4890, 4850, 4738   \n
+반도체학과   율곡관 4층   467-4469   \n
+방송음향기술과   정보통신관 2층   467-4510   \n
+영상디자인과   정보통신관 2층   467-4518   \n
+미래자동차공학부   자동차관 4층   467-4839   \n
+전기공학과   율곡관 3층   467-4621, 4737   \n
+AI시스템과   정보통신관 4층   467-4909, 4907   \n
+컴퓨터정보학부(응용sw전공)   전산관 3층   467-4880, 4429, 4889  \n
+건설환경공학과   퇴계관 2층   467-4618, 4919   \n
+실내디자인학부   퇴계관 5층   467-4939, 4930   \n
+해군기술부사관과   한림관 2층   467-4470   \n
+인문사회계열   경영학과   퇴계관 4층   467-4572, 4674   \n
+사무행정학과   수암관 2층   467-4970, 4979   \n
+도서관미디어정보과   수암관 5층   467-4969, 4960 \n
+사회복지학과   수암관 1층   467-4540, 4541  \n
+유아교육과   홍지관 6층   467-4658   \n
+항공서비스과   홍지관 4층   467-4959, 4951  \n
+호텔레저학과   임곡관 3층   467-4418   \n
+예체능계열   스포츠재활과   한림관 1층   467-4991\n
+스포츠지도과   한림관 1층   467-4989      \n
+자연과학계열   언어치료학과   홍지관 5층   467-4401  \n
+호텔조리과   율곡관 7층   467-4787, 4780   \n
+제과제빵과   율곡관 6층   467-4491, 4681   \n
+보건안전학과   퇴계관 3층   467-4949   \n
+보건의료공학과   다산관 3층   467-4838   \n
+보건의료행정과   퇴계관 2층   467-4561   \n
+대림대홈페이지 URL https://www.daelim.ac.kr/index.do\n
+학생포털 URL https://pt.daelim.ac.kr/\n
+BigForest URL https://dllms.daelim.ac.kr/\n
+장학금     URL https://www.daelim.ac.kr/cms/FrCon/index.do?MENU_ID=990#page1\n
+공지사항   URL https://www.daelim.ac.kr/cms/FrCon/index.do?MENU_ID=900#page1\n
+</string>
 
     <!--자동차관-->
     <string name="car_1f">자동차관1층</string>
@@ -364,17 +402,14 @@
     <string name="string_junsan2f_3">③서버실 </string>
     <string name="string_junsan2f_4">④교수연구실 </string>
     <string name="string_junsan2f_5">⑤교수연구실 </string>
-    <string name="string_junsan2f_6">⑥교수연구실 J0158 </string>
+    <string name="string_junsan2f_6">⑥교수연구실 J0258 </string>
     <string name="string_junsan2f_7">⑦교수연구실</string>
     <string name="string_junsan2f_8">⑧기자재보관실 </string>
     <string name="string_junsan2f_9">⑨프로잭트실 J0224</string>
     <string name="string_junsan2f_10">⑩교양강의실 </string>
-    <string name="string_junsan2f_11">⑪교수연구실 J0158 </string>
-    <string name="string_junsan2f_12">⑫프로그래밍1 J0201</string>
-    <string name="string_junsan2f_13">⑬교양강의실 J0211</string>
-    <string name="string_junsan2f_14">⑭교양강의실 J0212</string>
-    <string name="string_junsan2f_15">⑮교양강의실 J0211</string>
-    <string name="string_junsan2f_16">⑯교양강의실 J0212</string>
+    <string name="string_junsan2f_11">⑪프로그래밍1 J0201</string>
+    <string name="string_junsan2f_12">⑫교양강의실 J0211</string>
+    <string name="string_junsan2f_13">⑬교양강의실 J0212</string>\
 
     <!--전산관3층-->
     <string name="string_junsan3f_1">①소프트웨어개발실</string>
@@ -449,7 +484,6 @@
     <!--생활관1층-->
     <string name="string_saenghwal1f_1">①카페베네</string>
     <string name="string_saenghwal1f_2">②편의점</string>
-    <string name="string_saenghwal1f_3">③테라스 </string>
 
     <!--생활관2층-->
     <string name="string_saenghwal2f_1">①IDEA룸1</string>
@@ -458,7 +492,6 @@
     <string name="string_saenghwal2f_4">④IDEA룸4</string>
     <string name="string_saenghwal2f_5">⑤IDEA룸5</string>
     <string name="string_saenghwal2f_6">⑥IDEA룸6</string>
-    <string name="string_saenghwal2f_7">⑦테라스</string>
 
     <!--임곡관1층-->
     <string name="string_limgok1f_1">①노동조합 H0103</string>
@@ -793,6 +826,7 @@
     <string name="string_hongji4f_15">⑮교수연구실10</string>
     <string name="string_hongji4f_16">⑯교수연구실11</string>
     <string name="string_hongji4f_17">⑰교수연구실15</string>
+    <string name="string_hongji4f_18">⑱어학실습실2</string>
 
     <!--홍지관5층-->
     <string name="string_hongji5f_1">①언어치료과 사무\n관리실</string>

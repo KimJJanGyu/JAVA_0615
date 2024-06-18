@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.limgok;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,7 +45,7 @@ public class Limgok2fFragment extends Fragment {
         textView7.setOnClickListener(v -> handleTextViewClick(textView7, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
         textView8.setOnClickListener(v -> handleTextViewClick(textView8, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
         textView9.setOnClickListener(v -> handleTextViewClick(textView9, R.drawable.ic_maker)); // Replace R.drawable.image3 with your actual image
-        textView1.setOnClickListener(v -> handleTextViewClick(textView10, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
+        textView10.setOnClickListener(v -> handleTextViewClick(textView10, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
 
 
 
@@ -67,36 +66,35 @@ public class Limgok2fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.limgok2f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 500;
+                params.topMargin = 250;
             } else if (textView.getId() == R.id.limgok2f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 630;
+                params.topMargin = 260;
             } else if (textView.getId() == R.id.limgok2f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 740;
+                params.topMargin = 260;
             } else if (textView.getId() == R.id.limgok2f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 850;
+                params.topMargin = 260;
             } else if (textView.getId() == R.id.limgok2f_5) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 960;
+                params.topMargin = 260;
             } else if (textView.getId() == R.id.limgok2f_6) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 520;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok2f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 630;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok2f_8) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 740;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.limgok2f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
-            }
-            else if (textView.getId() == R.id.limgok2f_10) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 850;
+                params.topMargin = 520;
+            } else if (textView.getId() == R.id.limgok2f_10) {
+                params.leftMargin = 960;
+                params.topMargin = 520;
             }
             // Add more conditions as needed for other TextViews
 

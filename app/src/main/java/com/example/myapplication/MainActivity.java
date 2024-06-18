@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 package com.example.myapplication;
 
 import android.content.Intent;
@@ -16,7 +26,6 @@ import com.example.myapplication.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
-
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
@@ -60,9 +69,4 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.\
         return false;
     }
-
-
-
-
-
 }

@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.hongji;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
@@ -18,32 +17,29 @@ import com.example.myapplication.R;
 public class Hongji3fFragment extends Fragment {
     private ImageView overlayImageView;
     private TextView lastClickedTextView;
-    private ConstraintLayout constraintLayout;
 
-    @SuppressLint("MissingInflatedId")
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hongji3f, container, false);
 
-        constraintLayout = view.findViewById(R.id.constraintLayout);
         overlayImageView = view.findViewById(R.id.overlay_image);
 
-        TextView textView1 = view.findViewById(R.id.text_hongji3f1);
-        TextView textView2 = view.findViewById(R.id.text_hongji3f2);
-        TextView textView3 = view.findViewById(R.id.text_hongji3f3);
-        TextView textView4 = view.findViewById(R.id.text_hongji3f4);
-        TextView textView5 = view.findViewById(R.id.text_hongji3f5);
-        TextView textView6 = view.findViewById(R.id.text_hongji3f6);
-        TextView textView7 = view.findViewById(R.id.text_hongji3f7);
-        TextView textView8 = view.findViewById(R.id.text_hongji3f8);
-        TextView textView9 = view.findViewById(R.id.text_hongji3f9);
-        TextView textView10 = view.findViewById(R.id.text_hongji3f10);
-        TextView textView11 = view.findViewById(R.id.text_hongji3f11);
-        TextView textView12 = view.findViewById(R.id.text_hongji3f12);
-        TextView textView13= view.findViewById(R.id.text_hongji3f13);
-        TextView textView14 = view.findViewById(R.id.text_hongji3f14);
-        TextView textView15 = view.findViewById(R.id.text_hongji3f15);
+        TextView textView1 = view.findViewById(R.id.hongji3f_1);
+        TextView textView2 = view.findViewById(R.id.hongji3f_2);
+        TextView textView3 = view.findViewById(R.id.hongji3f_3);
+        TextView textView4 = view.findViewById(R.id.hongji3f_4);
+        TextView textView5 = view.findViewById(R.id.hongji3f_5);
+        TextView textView6 = view.findViewById(R.id.hongji3f_6);
+        TextView textView7 = view.findViewById(R.id.hongji3f_7);
+        TextView textView8 = view.findViewById(R.id.hongji3f_8);
+        TextView textView9 = view.findViewById(R.id.hongji3f_9);
+        TextView textView10 = view.findViewById(R.id.hongji3f_10);
+        TextView textView11 = view.findViewById(R.id.hongji3f_11);
+        TextView textView12 = view.findViewById(R.id.hongji3f_12);
+        TextView textView13 = view.findViewById(R.id.hongji3f_13);
+        TextView textView14 = view.findViewById(R.id.hongji3f_14);
+        TextView textView15 = view.findViewById(R.id.hongji3f_15);
 
         textView1.setOnClickListener(v -> handleTextViewClick(textView1, R.drawable.ic_maker));
         textView2.setOnClickListener(v -> handleTextViewClick(textView2, R.drawable.ic_maker));
@@ -59,7 +55,7 @@ public class Hongji3fFragment extends Fragment {
         textView12.setOnClickListener(v -> handleTextViewClick(textView12, R.drawable.ic_maker));
         textView13.setOnClickListener(v -> handleTextViewClick(textView13, R.drawable.ic_maker));
         textView14.setOnClickListener(v -> handleTextViewClick(textView14, R.drawable.ic_maker));
-        textView14.setOnClickListener(v -> handleTextViewClick(textView15, R.drawable.ic_maker));
+        textView15.setOnClickListener(v -> handleTextViewClick(textView15, R.drawable.ic_maker));
 
         return view;
     }
@@ -72,62 +68,59 @@ public class Hongji3fFragment extends Fragment {
             // Set the image resource
             overlayImageView.setImageResource(imageResId);
 
-            // Use ConstraintSet to modify constraints
-            ConstraintSet constraintSet = new ConstraintSet();
-            constraintSet.clone(constraintLayout);
+            // Get the layout parameters of overlayImageView
+            ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) overlayImageView.getLayoutParams();
 
-            if (textView.getId() == R.id.text_hongji3f1) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 120);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            } else if (textView.getId() == R.id.text_hongji3f2) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 250);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji3f3) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 400);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji3f4) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 600);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji3f5) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 700);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji3f6) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 830);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji3f7) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 940);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji3f8) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1200);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 800);
-            } else if (textView.getId() == R.id.text_hongji3f9) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 250);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            }else if (textView.getId() == R.id.text_hongji3f10) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 350);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            }
-            else if (textView.getId() == R.id.text_hongji3f11) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 450);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            }else if (textView.getId() == R.id.text_hongji3f12) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 600);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            }else if (textView.getId() == R.id.text_hongji3f13) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1230);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            }else if (textView.getId() == R.id.text_hongji3f14) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1350);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            }
-            else if (textView.getId() == R.id.text_hongji3f15) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1000);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            }
-            // Add more conditions as needed for other TextViews
+            // Set the margins to move overlayImageView to the desired coordinates
+            if (textView.getId() == R.id.hongji3f_1) {
+                params.leftMargin = 130;
+                params.topMargin = 450;
+            } else if (textView.getId() == R.id.hongji3f_2) {
+                params.leftMargin = 220;
+                params.topMargin = 100;
+            } else if (textView.getId() == R.id.hongji3f_3) {
+                params.leftMargin = 300;
+                params.topMargin = 100;
+            } else if (textView.getId() == R.id.hongji3f_4) {
+                params.leftMargin = 410;
+                params.topMargin = 100;
+            } else if (textView.getId() == R.id.hongji3f_5) {
+                params.leftMargin = 510;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.hongji3f_6) {
+                params.leftMargin = 610;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.hongji3f_7) {
+                params.leftMargin = 710;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.hongji3f_8) {
+                params.leftMargin = 900;
+                params.topMargin = 200;
+            }else if (textView.getId() == R.id.hongji3f_9) {
+                params.leftMargin = 220;
+                params.topMargin = 450;
+            }else if (textView.getId() == R.id.hongji3f_10) {
+                params.leftMargin = 320;
+                params.topMargin = 450;
+            }else if (textView.getId() == R.id.hongji3f_11) {
+                params.leftMargin = 400;
+                params.topMargin = 450;
+            }else if (textView.getId() == R.id.hongji3f_12) {
+                params.leftMargin = 470;
+                params.topMargin = 450;
+            }else if (textView.getId() == R.id.hongji3f_13) {
+                params.leftMargin = 950;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.hongji3f_14) {
+                params.leftMargin = 1000;
+                params.topMargin = 100;
+            } else if (textView.getId() == R.id.hongji3f_15) {
+                params.leftMargin = 700;
+                params.topMargin = 450;
+            }// Add more conditions as needed for other TextViews
 
-            // Apply the modified constraints
-            constraintSet.applyTo(constraintLayout);
+            // Apply the modified layout parameters
+            overlayImageView.setLayoutParams(params);
 
             // Make overlayImageView visible
             overlayImageView.setVisibility(View.VISIBLE);

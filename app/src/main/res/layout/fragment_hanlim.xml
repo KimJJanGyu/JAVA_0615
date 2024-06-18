@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.hanlim.HanlimFragment">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start_hanlim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
+
     <ImageView
         android:id="@+id/image_hanlimbuilding"
         android:layout_width="match_parent"
@@ -51,45 +58,41 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/hanlim_1f"
         android:src="@drawable/hanlim1f"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim"
+        app:layout_constraintTop_toBottomOf="@id/image_carline" />
 
     <ImageButton
         android:id="@+id/hanlim2f"
         android:layout_width="334dp"
         android:layout_height="68dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/hanlim_2f"
         android:src="@drawable/hanlim2f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim"
+        app:layout_constraintTop_toBottomOf="@id/hanlim1f" />
 
     <ImageButton
         android:id="@+id/hanlim3f"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/hanlim_3f"
         android:src="@drawable/hanlim3f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim"
+        app:layout_constraintTop_toBottomOf="@id/hanlim2f" />
 
     <ImageButton
         android:id="@+id/hanlim4f"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="50dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/hanlim_4f"
         android:src="@drawable/hanlim4f"
-        app:layout_constraintTop_toBottomOf="@id/image_carline"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim"
+        app:layout_constraintTop_toBottomOf="@id/hanlim3f" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

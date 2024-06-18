@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.junsan;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,8 +45,7 @@ public class Junsan5fFragment extends Fragment {
         textView7.setOnClickListener(v -> handleTextViewClick(textView7, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
         textView8.setOnClickListener(v -> handleTextViewClick(textView8, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
         textView9.setOnClickListener(v -> handleTextViewClick(textView9, R.drawable.ic_maker)); // Replace R.drawable.image3 with your actual image
-        textView1.setOnClickListener(v -> handleTextViewClick(textView10, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
-
+        textView10.setOnClickListener(v -> handleTextViewClick(textView10, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
 
 
         return view;
@@ -66,47 +64,48 @@ public class Junsan5fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.junsan5f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 130;
+                params.topMargin = 230;
             } else if (textView.getId() == R.id.junsan5f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 250;
+                params.topMargin = 530;
             } else if (textView.getId() == R.id.junsan5f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 360;
+                params.topMargin = 530;
             } else if (textView.getId() == R.id.junsan5f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 470;
+                params.topMargin = 530;
             } else if (textView.getId() == R.id.junsan5f_5) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 580;
+                params.topMargin = 530;
             } else if (textView.getId() == R.id.junsan5f_6) {
                 params.leftMargin = 780;
-                params.topMargin = 320;
+                params.topMargin = 340;
             } else if (textView.getId() == R.id.junsan5f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 620;
+                params.topMargin = 340;
             } else if (textView.getId() == R.id.junsan5f_8) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 320;
+                params.topMargin = 180;
             } else if (textView.getId() == R.id.junsan5f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 400;
+                params.topMargin = 180;
+            } else if (textView.getId() == R.id.junsan5f_10) {
+                params.leftMargin = 550;
+                params.topMargin = 180;
             }
-            else if (textView.getId() == R.id.junsan5f_10) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
-            }
-            // Add more conditions as needed for other TextViews
 
-            // Apply the modified layout parameters
-            overlayImageView.setLayoutParams(params);
+                // Add more conditions as needed for other TextViews
 
-            // Make overlayImageView visible
-            overlayImageView.setVisibility(View.VISIBLE);
+                // Apply the modified layout parameters
+                overlayImageView.setLayoutParams(params);
 
-            // Set the last clicked textView
-            lastClickedTextView = textView;
+                // Make overlayImageView visible
+                overlayImageView.setVisibility(View.VISIBLE);
+
+                // Set the last clicked textView
+                lastClickedTextView = textView;
+
         }
     }
 }

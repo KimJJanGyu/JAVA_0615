@@ -1,55 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ui.hanlim.Hanlim3fFragment">
+    tools:context=".ui.hanlim.Hanlim3fFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_1"
+        android:id="@+id/guideline_start_hanlim_3f_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="70dp" />
+        app:layout_constraintGuide_begin="150dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_2"
+        android:id="@+id/guideline_start_hanlim_3f_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="165dp" />
+        app:layout_constraintGuide_begin="250dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_start_car_1f_3"
+        android:id="@+id/guideline_start_hanlim_3f_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="270dp" />
+        app:layout_constraintGuide_begin="370dp" />
 
-    <ImageView
-        android:id="@+id/image_hanlim3f"
-        android:layout_width="wrap_content"
-        android:layout_height="423dp"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="fitXY"
-        android:src="@drawable/hanlim3fmap"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="36dp"
-        tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/hanlimimage_3f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            android:src="@drawable/hanlim3fmap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/overlay_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_maker"
-        app:layout_constraintTop_toTopOf="@id/hanlim4f"
-        app:layout_constraintStart_toStartOf="@id/hanlim4f"
-        android:visibility="gone"
-        tools:ignore="MissingConstraints,NotSibling"
-        android:contentDescription="@string/todo" />
+        <ImageView
+            android:id="@+id/overlay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_maker"
+            android:visibility="gone"
+            android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@id/hanlimimage_3f"
+            app:layout_constraintStart_toStartOf="@id/hanlimimage_3f" />
 
     <TextView
         android:id="@+id/text_hanlim3f1"
@@ -59,8 +62,8 @@
         android:gravity="center"
         android:text="①체육관"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@id/image_hanlim3f"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_1"
+        app:layout_constraintTop_toBottomOf="@id/hanlimimage_3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim_3f_1"
         tools:ignore="MissingConstraints"
         android:clickable="true"
         android:focusable="true" />
@@ -73,8 +76,8 @@
         android:gravity="center"
         android:text="②샤워실1"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_2"
-        app:layout_constraintTop_toBottomOf="@id/image_hanlim3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim_3f_2"
+        app:layout_constraintTop_toBottomOf="@id/hanlimimage_3f"
         tools:ignore="MissingConstraints"
         />
 
@@ -86,9 +89,10 @@
         android:gravity="center"
         android:text="③샤워실2"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@id/guideline_start_car_1f_3"
-        app:layout_constraintTop_toBottomOf="@id/image_hanlim3f"
+        app:layout_constraintStart_toStartOf="@id/guideline_start_hanlim_3f_3"
+        app:layout_constraintTop_toBottomOf="@id/hanlimimage_3f"
         tools:ignore="MissingConstraints"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

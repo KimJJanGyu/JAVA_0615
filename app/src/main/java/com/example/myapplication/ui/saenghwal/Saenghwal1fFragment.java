@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.saenghwal;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,16 +27,12 @@ public class Saenghwal1fFragment extends Fragment {
 
         TextView textView1 = view.findViewById(R.id.saenghwal1f_1);
         TextView textView2 = view.findViewById(R.id.saenghwal1f_2);
-        TextView textView3 = view.findViewById(R.id.saenghwal1f_3);
-
 
 
         textView1.setOnClickListener(v -> handleTextViewClick(textView1, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
         textView2.setOnClickListener(v -> handleTextViewClick(textView2, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
-        textView3.setOnClickListener(v -> handleTextViewClick(textView3, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
 
         // Replace R.drawable.image1 with your actual image
-
 
 
         return view;
@@ -56,14 +51,10 @@ public class Saenghwal1fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.saenghwal1f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 500;
+                params.topMargin = 520;
             } else if (textView.getId() == R.id.saenghwal1f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
-            }
-            else if (textView.getId() == R.id.saenghwal1f_3) {
-                params.leftMargin = 450;
+                params.leftMargin = 880;
                 params.topMargin = 330;
             }
 
@@ -79,3 +70,4 @@ public class Saenghwal1fFragment extends Fragment {
         }
     }
 }
+

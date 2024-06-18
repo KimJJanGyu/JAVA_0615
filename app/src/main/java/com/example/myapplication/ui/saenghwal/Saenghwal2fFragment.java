@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.saenghwal;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,9 +38,9 @@ public class Saenghwal2fFragment extends Fragment {
         textView1.setOnClickListener(v -> handleTextViewClick(textView1, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
         textView2.setOnClickListener(v -> handleTextViewClick(textView2, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
         textView3.setOnClickListener(v -> handleTextViewClick(textView3, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
-        textView1.setOnClickListener(v -> handleTextViewClick(textView4, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
-        textView2.setOnClickListener(v -> handleTextViewClick(textView5, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
-        textView3.setOnClickListener(v -> handleTextViewClick(textView6, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
+        textView4.setOnClickListener(v -> handleTextViewClick(textView4, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
+        textView5.setOnClickListener(v -> handleTextViewClick(textView5, R.drawable.ic_maker)); // Replace R.drawable.image2 with your actual image
+        textView6.setOnClickListener(v -> handleTextViewClick(textView6, R.drawable.ic_maker)); // Replace R.drawable.image1 with your actual image
 
         // Replace R.drawable.image1 with your actual image
 
@@ -64,26 +63,26 @@ public class Saenghwal2fFragment extends Fragment {
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.saenghwal2f_1) {
                 params.leftMargin = 100;
-                params.topMargin = 380;
+                params.topMargin = 230;
             } else if (textView.getId() == R.id.saenghwal2f_2) {
-                params.leftMargin = 450;
+                params.leftMargin = 100;
                 params.topMargin = 330;
             }
             else if (textView.getId() == R.id.saenghwal2f_3) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 100;
+                params.topMargin = 530;
             }
             else if (textView.getId() == R.id.saenghwal2f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 900;
+                params.topMargin = 530;
             }
             else if (textView.getId() == R.id.saenghwal2f_5) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 980;
+                params.topMargin = 530;
             }
             else if (textView.getId() == R.id.saenghwal2f_6) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 1020;
+                params.topMargin = 530;
             }
 
 

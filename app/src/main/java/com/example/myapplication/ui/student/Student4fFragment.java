@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.student;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,23 +61,23 @@ public class Student4fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.student4f_1) {
-                params.leftMargin = 100;
-                params.topMargin = 380;
+                params.leftMargin = 900;
+                params.topMargin = 530;
             } else if (textView.getId() == R.id.student4f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 900;
+                params.topMargin = 480;
             }
             else if (textView.getId() == R.id.student4f_3) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 900;
+                params.topMargin = 420;
             }
             else if (textView.getId() == R.id.student4f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 900;
+                params.topMargin = 340;
             }
             else if (textView.getId() == R.id.student4f_5) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 650;
+                params.topMargin = 250;
             }
             // Add more conditions as needed for other TextViews
 

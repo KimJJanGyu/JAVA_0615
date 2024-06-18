@@ -23,22 +23,24 @@
         android:id="@+id/junsanimage_3f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/todo"
         android:src="@drawable/junsan3f_image"
+        android:contentDescription="@string/todo"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:clickable="true"
-        android:focusable="true" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
 
     <ImageView
         android:id="@+id/overlay_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_maker"
-        app:layout_constraintTop_toTopOf="@id/junsanimage_3f"
-        app:layout_constraintStart_toStartOf="@id/junsanimage_3f"
         android:visibility="gone"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:layout_constraintTop_toTopOf="@id/junsanimage_3f"
+        app:layout_constraintStart_toStartOf="@id/junsanimage_3f" />
 
     <TextView
         android:id="@+id/junsan3f_1"

@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
@@ -18,7 +17,6 @@ import com.example.myapplication.R;
 public class Hongji6fFragment extends Fragment {
     private ImageView overlayImageView;
     private TextView lastClickedTextView;
-    private ConstraintLayout constraintLayout;
 
     @SuppressLint("MissingInflatedId")
     @Nullable
@@ -26,7 +24,6 @@ public class Hongji6fFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_hongji6f, container, false);
 
-        constraintLayout = view.findViewById(R.id.constraintLayout);
         overlayImageView = view.findViewById(R.id.overlay_image);
 
         TextView textView1 = view.findViewById(R.id.text_hongji6f1);
@@ -64,11 +61,11 @@ public class Hongji6fFragment extends Fragment {
         textView12.setOnClickListener(v -> handleTextViewClick(textView12, R.drawable.ic_maker));
         textView13.setOnClickListener(v -> handleTextViewClick(textView13, R.drawable.ic_maker));
         textView14.setOnClickListener(v -> handleTextViewClick(textView14, R.drawable.ic_maker));
-        textView14.setOnClickListener(v -> handleTextViewClick(textView15, R.drawable.ic_maker));
-        textView14.setOnClickListener(v -> handleTextViewClick(textView16, R.drawable.ic_maker));
-        textView14.setOnClickListener(v -> handleTextViewClick(textView17, R.drawable.ic_maker));
-        textView14.setOnClickListener(v -> handleTextViewClick(textView18, R.drawable.ic_maker));
-        textView14.setOnClickListener(v -> handleTextViewClick(textView19, R.drawable.ic_maker));
+        textView15.setOnClickListener(v -> handleTextViewClick(textView15, R.drawable.ic_maker));
+        textView16.setOnClickListener(v -> handleTextViewClick(textView16, R.drawable.ic_maker));
+        textView17.setOnClickListener(v -> handleTextViewClick(textView17, R.drawable.ic_maker));
+        textView18.setOnClickListener(v -> handleTextViewClick(textView18, R.drawable.ic_maker));
+        textView19.setOnClickListener(v -> handleTextViewClick(textView19, R.drawable.ic_maker));
 
         return view;
     }
@@ -82,73 +79,70 @@ public class Hongji6fFragment extends Fragment {
             overlayImageView.setImageResource(imageResId);
 
             // Use ConstraintSet to modify constraints
-            ConstraintSet constraintSet = new ConstraintSet();
-            constraintSet.clone(constraintLayout);
+            ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) overlayImageView.getLayoutParams();
 
             if (textView.getId() == R.id.text_hongji6f1) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 120);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 130;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.text_hongji6f2) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 250);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
+                params.leftMargin = 550;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.text_hongji6f3) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 400);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
+                params.leftMargin = 700;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.text_hongji6f4) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 600);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
+                params.leftMargin = 770;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.text_hongji6f5) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 700);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji6f6) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 830);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji6f7) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 940);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            } else if (textView.getId() == R.id.text_hongji6f8) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1200);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 800);
-            } else if (textView.getId() == R.id.text_hongji6f9) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 250);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 260;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.text_hongji6f6) {
+                params.leftMargin = 380;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.text_hongji6f7) {
+                params.leftMargin = 470;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.text_hongji6f8) {
+                params.leftMargin = 580;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.text_hongji6f9) {
+                params.leftMargin = 770;
+                params.topMargin = 100;
             }else if (textView.getId() == R.id.text_hongji6f10) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 350);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
-            }
-            else if (textView.getId() == R.id.text_hongji6f11) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 450);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 850;
+                params.topMargin = 100;
+            }else if (textView.getId() == R.id.text_hongji6f11) {
+                params.leftMargin = 900;
+                params.topMargin = 230;
             }else if (textView.getId() == R.id.text_hongji6f12) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 600);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 1000;
+                params.topMargin = 170;
             }else if (textView.getId() == R.id.text_hongji6f13) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1230);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
+                params.leftMargin = 240;
+                params.topMargin = 450;
             }else if (textView.getId() == R.id.text_hongji6f14) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1350);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 450);
-            }
-            else if (textView.getId() == R.id.text_hongji6f15) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1000);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 330;
+                params.topMargin = 450;
+            }else if (textView.getId() == R.id.text_hongji6f15) {
+                params.leftMargin = 430;
+                params.topMargin = 450;
             }else if (textView.getId() == R.id.text_hongji6f16) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1000);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 330;
+                params.topMargin = 450;
             }else if (textView.getId() == R.id.text_hongji6f17) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1000);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 960;
+                params.topMargin = 220;
             }else if (textView.getId() == R.id.text_hongji6f18) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1000);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 920;
+                params.topMargin = 100;
             }else if (textView.getId() == R.id.text_hongji6f19) {
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 1000);
-                constraintSet.connect(R.id.overlay_image, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 1400);
+                params.leftMargin = 900;
+                params.topMargin = 450;
             }
             // Add more conditions as needed for other TextViews
 
             // Apply the modified constraints
-            constraintSet.applyTo(constraintLayout);
+            overlayImageView.setLayoutParams(params);
 
             // Make overlayImageView visible
             overlayImageView.setVisibility(View.VISIBLE);

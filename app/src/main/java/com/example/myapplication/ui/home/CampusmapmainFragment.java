@@ -24,4 +24,7 @@ public class CampusmapmainFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         // 뷰가 생성된 후 추가 작업이 필요한 경우 여기에 작성합니다.
     }
+
+    public void onHongjiMiniClick(View view) {
+    }
 }

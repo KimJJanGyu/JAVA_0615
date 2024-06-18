@@ -51,10 +51,10 @@ public class Student1fFragment extends Fragment {
 
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.student1f_1) {
-                params.leftMargin = 100;
+                params.leftMargin = 400;
                 params.topMargin = 380;
             } else if (textView.getId() == R.id.student1f_2) {
-                params.leftMargin = 450;
+                params.leftMargin = 750;
                 params.topMargin = 330;
            }
             // Add more conditions as needed for other TextViews

@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.junsan;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,31 +64,31 @@ public class Junsan1fFragment extends Fragment {
             // Set the margins to move overlayImageView to the desired coordinates
             if (textView.getId() == R.id.junsan1f_1) {
                 params.leftMargin = 100;
-                params.topMargin = 380;
+                params.topMargin = 560;
             } else if (textView.getId() == R.id.junsan1f_2) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 80;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.junsan1f_3) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 280;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.junsan1f_4) {
-                params.leftMargin = 450;
-                params.topMargin = 330;
+                params.leftMargin = 120;
+                params.topMargin = 230;
             } else if (textView.getId() == R.id.junsan1f_5) {
                 params.leftMargin = 780;
-                params.topMargin = 320;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.junsan1f_6) {
                 params.leftMargin = 780;
-                params.topMargin = 320;
+                params.topMargin = 450;
             } else if (textView.getId() == R.id.junsan1f_7) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 900;
+                params.topMargin = 370;
             } else if (textView.getId() == R.id.junsan1f_8) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 900;
+                params.topMargin = 410;
             } else if (textView.getId() == R.id.junsan1f_9) {
-                params.leftMargin = 780;
-                params.topMargin = 320;
+                params.leftMargin = 900;
+                params.topMargin = 450;
             }
             // Add more conditions as needed for other TextViews
 
