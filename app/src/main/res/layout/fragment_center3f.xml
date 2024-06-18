@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.center.Center3fFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start_center_3f_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="40dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start_center_3f_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="290dp" />
+
+        <ImageView
+            android:id="@+id/centerimage_3f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/centerimage_3f"
+            android:contentDescription="@string/todo"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="100dp" />
+
+        <ImageView
+            android:id="@+id/overlay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_maker"
+            android:visibility="gone"
+            android:contentDescription="@string/todo"
+            app:layout_constraintTop_toTopOf="@id/centerimage_3f"
+            app:layout_constraintStart_toStartOf="@id/centerimage_3f" />
+
+        <TextView
+            android:id="@+id/center3f_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/centerimage_3f"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_1" />
+
+        <TextView
+            android:id="@+id/center3f_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_2"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/centerimage_3f"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_2" />
+
+        <TextView
+            android:id="@+id/center3f_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_3"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_1"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_1" />
+
+        <TextView
+            android:id="@+id/center3f_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_4"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_2"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_2" />
+
+        <TextView
+            android:id="@+id/center3f_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_5"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_3"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_1" />
+
+        <TextView
+            android:id="@+id/center3f_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_6"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_4"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_2" />
+
+        <TextView
+            android:id="@+id/center3f_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_7"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_5"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_1" />
+
+        <TextView
+            android:id="@+id/center3f_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_8"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_6"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_2" />
+
+        <TextView
+            android:id="@+id/center3f_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_center3f_9"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/center3f_7"
+            app:layout_constraintStart_toStartOf="@id/guideline_start_center_3f_1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
